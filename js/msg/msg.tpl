@@ -39,7 +39,7 @@
 	<div class="row">
 		<div class="col-xs-12 col-sm-3 center">
 			<span class="profile-picture">
-				<img src="/angular_manage/avatars/profile-pic.jpg" alt="" class="img-rounded center">
+				<img src="avatars/profile-pic.jpg" alt="" class="img-rounded center">
 				<div class="space-4"></div>
 				<div class="bg-success">Alex M.Doe</div>
 			</span>

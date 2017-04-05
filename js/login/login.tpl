@@ -3,13 +3,13 @@
 	<div class="accounts">
 	    <h1>SpAdmin</h1>
 	    <div id="user" class="users" ng-click="goLogin()">
-	        <img src="/angular_manage/images/login/person1.png" alt="" />
+	        <img src="images/login/person1.png" alt="" />
 	    </div>
 	    <div id="user2" class="users" ng-click="goLogin()">
-	        <img src="/angular_manage/images/login/person2.png" alt="" />
+	        <img src="images/login/person2.png" alt="" />
 	    </div>
 	    <div id="user3" class="users" ng-click="goLogin()">
-	        <img src="/angular_manage/images/login/person3.png" alt="" />
+	        <img src="images/login/person3.png" alt="" />
 	    </div>
 	</div>
 	<form class="form-signin login-container" name="login" id="login">
