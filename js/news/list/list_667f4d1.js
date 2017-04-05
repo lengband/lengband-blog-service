@@ -1,0 +1,1 @@
+define("js/news/list/list",function(require){var A=require("js/init");A.controller("newsListCtrl",function($scope,$stateParams,$http){window.onscroll=null,$scope.num=$stateParams.pageNum,$http.get("action/newslist.php?num="+$scope.num).success(function(res){res&&0===res.errno?$scope.list=res.data:alert("请求失败")})})});

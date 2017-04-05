@@ -1,0 +1,1 @@
+define("js/news/create/create",function(require){var A=require("js/init");A.controller("createNewsCtrl",function($scope,$http,$location){window.onscroll=null,$scope.goToCreateNews=function(){$scope.data.date=(new Date).getTime(),$http.post("action/createnews.php",$scope.data).success(function(res){res&&0===res.errno?$location.path("/newslist/1"):alert("提交失败")})}})});

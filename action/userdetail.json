@@ -1,0 +1,11 @@
+{
+	"errno": 0,
+	"data": {
+		"username": "小铭",
+		"telephone": "12345678901",
+		"sex": "男",
+		"password":"123345",
+		"id": 10,
+		"info": "这是个男孩子"
+	}
+}

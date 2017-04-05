@@ -1,0 +1,1 @@
+define("js/nav/nav",function(require){var A=require("js/init");A.controller("navCtrl",function($scope){window.onscroll=null,console.log("111"),$scope.toggleList=function(e){var dom=$(e.target);dom.siblings().slideToggle()}})});

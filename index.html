@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>爱创课堂后台管理系统</title>
+	<!-- 加入日历组件 -->
+<!--<link rel="stylesheet" href="css/bootstrap-datetimepicker.min.css"> -->
+
+    <link rel="stylesheet" href="static/pkg/css/all_eb92885.css" />
+</head>
+<style>
+</style>
+<body ng-app="myApp">
+	<nav class="navbar-default navbar-fixed-top navbar-inverse" ng-show="isShowNav">
+		  <div class="container-fluid">
+		    <!-- Brand and toggle get grouped for better mobile display -->
+		    <div class="navbar-header">
+		      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+		        <span class="sr-only">Toggle navigation</span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		      </button>
+		      <a class="navbar-brand" href="#"><i class="glyphicon"></i> wp后台管理系统</a>
+		    </div>
+
+		    <!-- Collect the nav links, forms, and other content for toggling -->
+		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+		      <ul class="nav navbar-nav">
+		        <li class="active"><a href="#">首页 <span class="sr-only">(current)</span></a></li>
+		        <li class="dropdown">
+		          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">功能 <span class="caret"></span></a>
+		          <ul class="dropdown-menu">
+		            <li><a href="#">信息建立</a></li>
+		            <li><a href="#">信息查询</a></li>
+		            <li role="separator" class="divider"></li>
+		            <li><a href="#">设置</a></li>
+		          </ul>
+		        </li>
+		        <li><a href="#">帮助</a></li>
+		      </ul>
+		      <ul class="nav navbar-nav navbar-right">
+		        <li><a href="#">Link</a></li>
+		        <li class="dropdown">
+		          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><!-- <img class="" src="avatars/user.jpg" id="userImg"/> -->
+										<span class="user-info">
+											<small>欢迎光临,</small>
+											{{username}}
+										</span>
+
+										<i class="icon-caret-down"></i></a>
+		          <ul class="dropdown-menu">
+		            <li><a href="#">设置</a></li>
+		            <li><a href="#">个人资料</a></li>
+		            <li role="separator" class="divider"></li>
+		            <li><a href="action/logout.php">退出</a></li>
+		          </ul>
+		        </li>
+		      </ul>
+		    </div><!-- /.navbar-collapse -->
+		  </div><!-- /.container-fluid -->
+	</nav>
+	<div class="slider" ng-controller="navCtrl" id="aaa">
+		 <!-- 垂直的胶囊式导航菜单 -->
+        <ul class="nav nav-pills nav-stacked">
+            <li class="active primary"><a href="#/">首页</a></li>
+            </br>
+            <li><a href="#/userlist/1">用户</a></li>
+            <li><a href="#/msg">信息管理</a>
+            
+            <ul class="nav nav-pills nav-stacked">
+				<li><a href="#/newslist/1">新闻列表</a></li>
+		        <li><a href="#/createnews">新闻注册</a></li>
+		    </ul>
+            </br>
+            <li><a href="#/albums">相册</a></li>
+            <li><a href="#/mail/1">邮件</a></li>
+            </br>
+            <li><a href="#">设置</a></li>
+            <li><a href="#">帮助</a></li>
+        </ul>
+    </div>
+	</div>
+	<div class="main" ui-view>
+	</div>
+
+<script type="text/javascript" src="mod_765be88.js"></script>
+<script type="text/javascript" src="static/pkg/js/all_b0b4d8a.js"></script>
+<script type="text/javascript" src="static/pkg/js/lib_3dd63a5.js"></script>
+<script>
+require('js/init')
+</script>
+</body>
+
+</html>
