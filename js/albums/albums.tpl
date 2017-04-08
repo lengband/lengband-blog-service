@@ -14,13 +14,13 @@
         </div>
       </form>
 </div>
-<div class="lunbo">
+<div class="lunbo" id="lunbo">
 	<ul class="moveUl">
-		<li><div class="img"><img src="images/lunbo/1.jpg" alt=""></div><div class="layer"><a href=""><span><i class="glyphicon glyphicon-plus"></i> 丨 <b>share</b></span><i class="glyphicon glyphicon-eye-open eyeWP"></i></a></div></li>
-		<li><div class="img"><img src="images/lunbo/2.jpg" alt=""></div><div class="layer"><a href=""><span><i class="glyphicon glyphicon-plus"></i> 丨 <b>share</b></span><i class="glyphicon glyphicon-eye-open eyeWP"></i></a></div></li>
-		<li><div class="img"><img src="images/lunbo/3.jpg" alt=""></div><div class="layer"><a href=""><span><i class="glyphicon glyphicon-plus"></i> 丨 <b>share</b></span><i class="glyphicon glyphicon-eye-open eyeWP"></i></a></div></li>
-		<li><div class="img"><img src="images/lunbo/4.jpg" alt=""></div><div class="layer"><a href=""><span><i class="glyphicon glyphicon-plus"></i> 丨 <b>share</b></span><i class="glyphicon glyphicon-eye-open eyeWP"></i></a></div></li>
-		<li><div class="img"><img src="images/lunbo/5.jpg" alt=""></div><div class="layer"><a href=""><span><i class="glyphicon glyphicon-plus"></i> 丨 <b>share</b></span><i class="glyphicon glyphicon-eye-open eyeWP"></i></a></div></li>
+		<li><div class="img"><img src="./images/lunbo/1.jpg" alt=""></div><div class="layer"><a href=""><span><i class="glyphicon glyphicon-plus"></i> 丨 <b>share</b></span><i class="glyphicon glyphicon-eye-open eyeWP"></i></a></div></li>
+		<li><div class="img"><img src="./images/lunbo/2.jpg" alt=""></div><div class="layer"><a href=""><span><i class="glyphicon glyphicon-plus"></i> 丨 <b>share</b></span><i class="glyphicon glyphicon-eye-open eyeWP"></i></a></div></li>
+		<li><div class="img"><img src="./images/lunbo/3.jpg" alt=""></div><div class="layer"><a href=""><span><i class="glyphicon glyphicon-plus"></i> 丨 <b>share</b></span><i class="glyphicon glyphicon-eye-open eyeWP"></i></a></div></li>
+		<li><div class="img"><img src="./images/lunbo/4.jpg" alt=""></div><div class="layer"><a href=""><span><i class="glyphicon glyphicon-plus"></i> 丨 <b>share</b></span><i class="glyphicon glyphicon-eye-open eyeWP"></i></a></div></li>
+		<li><div class="img"><img src="./images/lunbo/5.jpg" alt=""></div><div class="layer"><a href=""><span><i class="glyphicon glyphicon-plus"></i> 丨 <b>share</b></span><i class="glyphicon glyphicon-eye-open eyeWP"></i></a></div></li>
 	</ul>
 	<a href="javascript:;" class="left_btn btn1" ng-click="ToLeft()">&lt;</a>
 	<a href="javascript:;" class="right_btn btn1" ng-click="ToRight()">&gt;</a>

@@ -1,1 +1,0 @@
-define("js/user/detail/detail",function(require){var A=require("js/init");A.controller("userDetailCtrl",function($scope,$stateParams,$http){window.onscroll=null,$http.get("action/userdetail.json?id="+$stateParams.userId).success(function(res){res&&0===res.errno&&res.data?$scope.data=res.data:alert("请求失败")})})});

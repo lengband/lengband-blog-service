@@ -1,1 +1,0 @@
-define("js/news/detail/detail",function(require){var A=require("js/init");A.controller("newsDetailCtrl",function($scope,$http,$stateParams){window.onscroll=null,$http.get("action/newsdetail.php?id="+$stateParams.newsId).success(function(res){res&&0===res.errno&&res.data?$scope.data=res.data:alert("请求失败")})})});
