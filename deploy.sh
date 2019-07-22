@@ -4,6 +4,6 @@ git add .
 git commit -am 'update'
 git push
 gitbook build && cp -R ./_book/* $lengbandGitIo && cd $lengbandGitIo
-git add .
-git commit -am 'update'
-git push
+&& git add .
+&& git commit -am 'update'
+&& git push
