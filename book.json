@@ -1,0 +1,14 @@
+{
+  "title": "wp-test",
+  "description": "用 GitBook 制作的第一本電子書！",
+  "isbn": "978-3-16-148410-0",
+  "language": "zh-tw",
+  "direction": "ltr",
+  "styles": {
+    "website": "css/website.css",
+    "ebook": "css/website.css",
+    "pdf": "css/website.css",
+    "mobi": "css/website.css",
+    "epub": "css/website.css"
+  }
+}
