@@ -8,6 +8,9 @@
 `gitbook-cli` 是 GitBook 的一个命令行工具。它将自动安装所需版本的 GitBook 来构建一本书。
 执行下面的命令，查看 GitBook 版本，以验证安装成功。
 `gitbook -V`
+##### 部署
+`sh deploy.sh`
+> 如果您copy到本地想进行更改开发，建议您配置`deploy.sh`中的变量 `ghPagesPath`
 ##### 构建
 `gitbook build`
 ##### 启动服务
