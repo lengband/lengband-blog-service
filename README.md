@@ -3,6 +3,16 @@
 此repo为 lengband.github.io 的源代码
 [lengband.github.io 的源码](https://lengband.github.io/)
 
+### gitbook安装
+`npm install gitbook-cli -g`
+`gitbook-cli` 是 GitBook 的一个命令行工具。它将自动安装所需版本的 GitBook 来构建一本书。
+执行下面的命令，查看 GitBook 版本，以验证安装成功。
+`gitbook -V`
+##### 构建
+`gitbook build`
+##### 启动服务
+`gitbook serve`
+上列命令会运行一个 web 服务, 通过 http://localhost:4000/ 可以预览书籍
 
 # markdown介绍
 # H1
