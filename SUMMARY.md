@@ -4,10 +4,10 @@
 * [FE](FE/README.md)
   * [webpack](FE/webpack/plugin.md)
   * [正则表达式](FE/js/regexp.md)
-  * [ES6](FE/js/ES6.md)
+  <!-- * [ES6](FE/js/ES6.md)
   * [vue](FE/js/vue.md)
-  * [react](FE/js/react.md)
-* [Linux]
+  * [react](FE/js/react.md) -->
+* [Linux](linux/README.md)
   * [vim](linux/vim/Introduction.md)
 * [网络](network/README.md)
   * [RESTful](network/http/RESTful.md)
