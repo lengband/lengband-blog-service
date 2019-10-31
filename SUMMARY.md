@@ -7,6 +7,8 @@
   * [ES6](FE/js/ES6.md)
   * [vue](FE/js/vue.md)
   * [react](FE/js/react.md)
+* [Linux]
+  * [vim](linux/vim/Introduction.md)
 * [网络](network/README.md)
   * [RESTful](network/http/RESTful.md)
   * [Cache-Control](network/http/Cache_Control.md)
