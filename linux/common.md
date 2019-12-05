@@ -17,7 +17,11 @@ locale 查看当前系统的语言
 
 `shutdown -h 30` 30分钟后执行关机
 `shutdown -c` 取消关机
+`reboot` 重启
 
+`hostname` 查看主机名称
+`hostnamectl set-hostname c7.test11` 修改主机名称
+> 修改主机名称的同事，要修改 /etc/hosts 文件，因为一些服务器上的服务依赖主机名称，所以这里要把对应关系也改成 127.0.0.1  c7.test11
 
 
 
