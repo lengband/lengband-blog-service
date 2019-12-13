@@ -244,7 +244,51 @@ shell（命令解释器）自带的命令成为内部命令，其他的是外部
 * `chgrp` 可以单独更改属组（不常用）（eg：`chgrp user1 /test`）
 
 
+## 软件安装
+#### 软件包管理
+> 包管理器是方便软件安装、卸载，解决软件依赖关系的重要工具
+* CentOS、RedHat 使用 yum 包管理器，软件安装包格式为 rpm
+* Debian、Ubuntu 使用 apt 包管理 、软件安装包格式为 deb
+#### rpm包和rpm命令
+> redhat 系统中包管理器叫 rpm包，管理命令叫 rpm 命令
 
+![](./images/rpm.png)
+
+**rpm 命令常用参数**
+> 查询和卸载的时候，只需要写名字即可，如：`rpm -q vim-common`，但是添加的时候要写全名字版本号等等，如：`rpm -i vim-enhanced-7.4.160-.el7.x86_64.rpm`
+* -q 查询软件包(`rpm -qa` 显示全部，`rpm -qa | more` 分屏显示，-l 显示安装目录)
+* -i 安装软件包
+* -e 卸载软件包
+
+**使用rpm可能出现的两个问题**
+* 依赖问题
+![](./images/rpm_question1.png)
+这样依赖的关系，我们要先安装它依赖的包。如果一个包的依赖树过于大的时候，会给我们按照造成很大的困扰。所有要用 [yum仓库](#yum仓库) 解决包裹依赖的问题
+* 版本问题
+假如现有版本和当前系统不兼容，那么就要采取 [源代码编译安装](#源代码编译安装) 的方式
+#### yum仓库
+> 对包集中管理的仓库
+
+**CentOS yum 源**
+http://mirror.centos.org/centos/7/
+**国内镜像**
+https://opsx.alibaba.com/mirror
+![](./images/yum_mirror.png)
+推荐使用上面第二条，别人已经写好的配置文件，下载下来后直接覆盖本地即可
+##### yum 常见命令
+![](./images/yum_cmd.png)
+**问题**
+如果源代码更新了，但是没有作者没有上传至yum仓库，怎么办？
+答：可以通过[源代码编译安装](#源代码编译安装) 的方式
+
+#### 源代码编译安装
+> 除了rpm包安装，还有源代码编译安装（以下是通用的安装编译步骤，具体以库的readme为准）
+* wget [https://openresty.org/download/openresty-1.15.8.1.tar.gz](https://openresty.org/download/openresty-1.15.8.1.tar.gz)
+* tar -zxf openresty-<VERSION>.tar.gz
+* cd openresty-<VERSION>
+* ./configure --prefix=/usr/local/openresty（指定安装目录）
+* make -j2（-j2 用两个逻辑的CPU编译，加快一些）
+* make install
 
 
 
