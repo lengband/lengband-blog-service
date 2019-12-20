@@ -8,6 +8,7 @@
 * `/bin` 命令目录
 * `/sbin` 管理命令目录
 * `/usr/bin/user/sbin` 系统预装的其他命令
+* `/proc` 主要用于存储内存读取的信息文件
 
 关机命令：init 0
 
@@ -289,6 +290,12 @@ https://opsx.alibaba.com/mirror
 * ./configure --prefix=/usr/local/openresty（指定安装目录）
 * make -j2（-j2 用两个逻辑的CPU编译，加快一些）
 * make install
+
+
+#### 服务管理工具systemctl
+常见操作
+`systemctl <start|stop|restart|reload|enable|disable|status> 服务名称`
+软件包安装的服务单元 `/usr/lib/systemd/system/`
 
 
 

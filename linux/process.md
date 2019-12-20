@@ -49,6 +49,23 @@ Swap：同上
   * SIGINT 通知前台进程组终止进程 ctrl+c
   * SIGKILL 立即结束程序，不能被阻塞和处理 `kill -9 <pid>`
 
-##### 守护进程和系统日志
+##### 守护进程(deamon)
+使用`nohup`与&符号配合运行一个命令(非守护进程)
+> nohup 命令使进程忽略hangup（挂起）信号，既当前终端关闭命令依旧会执行
+
+eg：`nohup tail -f /var/log/message &` 加上`&`就可以挂起服务并继续输入 
+守护进程
+> 系统开机或者重启自动启动的进程。
+eg：通过`ps -ef | grep sshd`查看ssh服务，通过sshd 的 PID 进入 `cd /proc/<PID>` 之后查看服务的执行目录，`ls -l cwd`，sshd的执行目录为`/`
+
+使用 screen 命令
+* `screen` 进入 screen 环境
+* ctrl+a d 退出（detached）screen环境
+* `screen -ls` 查看screen的会话
+* `screen -r` sessionid 恢复会话
+* ctrl + c，`exit` 终止掉screen，
+
+##### 系统日志
+
 ##### 服务管理工具 systemstl
 ##### SELinux 简介
