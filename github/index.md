@@ -29,12 +29,10 @@ demo：http://www.kenshinji.com/yddict/
 
 
 #### commitizen/cz-conventional-changelog
-这是两个库
-
-commitizen
+blog：https://juejin.im/post/5afc5242f265da0b7f44bee4
+###### commitizen
 我们需要借助它提供的 git cz 命令替代我们的 git commit 命令, 帮助我们生成符合规范的 commit message.
 github：https://github.com/commitizen/cz-cli
-
-cz-conventional-changelog
+###### cz-conventional-changelog
 一个符合 Angular团队规范的 prese
 github：https://github.com/commitizen/cz-conventional-changelog
