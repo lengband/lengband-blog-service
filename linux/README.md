@@ -299,4 +299,27 @@ https://opsx.alibaba.com/mirror
 
 
 
+##### 内存与磁盘管理
+
+内存使用率查看
+* `free`
+* `top`
+
+磁盘使用率查看
+* `fdisk` `fdsik -l` 查看磁盘分区情况
+* `df` `df -h` 查看磁盘分区的挂载位置
+* `du` `du /etc/passwd` 查看时间占用的空间
+
+常见文件系统
+Linux 支持多种文件系统，常见的有
+* ext4
+* xfs
+* NTFS（需安装额外软件）
+
+ext4文件系统
+* 超级块
+* 超级快副本
+* i节点(inode)
+* 数据块(datablock)
+
 

@@ -65,7 +65,16 @@ eg：通过`ps -ef | grep sshd`查看ssh服务，通过sshd 的 PID 进入 `cd /
 * `screen -r` sessionid 恢复会话
 * ctrl + c，`exit` 终止掉screen，
 
-##### 系统日志
 
-##### 服务管理工具 systemstl
-##### SELinux 简介
+##### 系统综合状态查看命令
+sar
+  * -u CPU
+  * -r 内存
+  * -b 磁盘IO，读/写 tps
+  * -d 每块磁盘的读写
+  * -q 进程
+`sar -u 1 10` 采集CPU指标，每隔1秒采集一次，一共采集10次
+
+iftop (yum install iftop)
+`iftop -P`
+查看网络流量
