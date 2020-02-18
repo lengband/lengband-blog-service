@@ -1,0 +1,182 @@
+2020-02-17 15:49:23,868 WARN 17447 [-/127.0.0.1/-/12ms POST /api/user/create] nodejs.UnauthorizedError: jwt malformed
+    at /Users/wangpeng/learn/app/lengband-blog/lengband-blog-service-mongo/node_modules/koa-jwt2/lib/index.js:117:18
+    at Object.module.exports [as verify] (/Users/wangpeng/learn/app/lengband-blog/lengband-blog-service-mongo/node_modules/jsonwebtoken/verify.js:63:12)
+    at decoded (/Users/wangpeng/learn/app/lengband-blog/lengband-blog-service-mongo/node_modules/koa-jwt2/lib/index.js:115:11)
+    at new Promise (<anonymous>)
+    at middleware (/Users/wangpeng/learn/app/lengband-blog/lengband-blog-service-mongo/node_modules/koa-jwt2/lib/index.js:114:27)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+name: "UnauthorizedError"
+message: "jwt malformed"
+code: "invalid_token"
+status: 401
+inner: {"name":"JsonWebTokenError","message":"jwt malformed"}
+pid: 17447
+hostname: wangpengdeMBP.lan
+
+2020-02-17 15:51:50,788 WARN 17596 [-/127.0.0.1/-/19ms POST /api/login] nodejs.UnauthorizedError: 用户名或密码不正确
+    at Object.throw (/Users/wangpeng/learn/app/lengband-blog/lengband-blog-service-mongo/node_modules/koa/lib/context.js:97:11)
+    at UserController.login (/Users/wangpeng/learn/app/lengband-blog/lengband-blog-service-mongo/app/controller/user.js:23:18)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async /Users/wangpeng/learn/app/lengband-blog/lengband-blog-service-mongo/node_modules/egg-development/app/middleware/egg_loader_trace.js:9:50
+    at async xframe (/Users/wangpeng/learn/app/lengband-blog/lengband-blog-service-mongo/node_modules/egg-security/lib/middlewares/xframe.js:7:5)
+    at async xssProtection (/Users/wangpeng/learn/app/lengband-blog/lengband-blog-service-mongo/node_modules/egg-security/lib/middlewares/xssProtection.js:7:5)
+    at async nosniff (/Users/wangpeng/learn/app/lengband-blog/lengband-blog-service-mongo/node_modules/egg-security/lib/middlewares/nosniff.js:8:5)
+    at async noopen (/Users/wangpeng/learn/app/lengband-blog/lengband-blog-service-mongo/node_modules/egg-security/lib/middlewares/noopen.js:8:5)
+    at async session (/Users/wangpeng/learn/app/lengband-blog/lengband-blog-service-mongo/node_modules/koa-session/index.js:41:7)
+    at async bodyParser (/Users/wangpeng/learn/app/lengband-blog/lengband-blog-service-mongo/node_modules/koa-bodyparser/index.js:86:5)
+    at async /Users/wangpeng/learn/app/lengband-blog/lengband-blog-service-mongo/node_modules/koa-static-cache/index.js:51:63
+    at async notfound (/Users/wangpeng/learn/app/lengband-blog/lengband-blog-service-mongo/node_modules/egg/app/middleware/notfound.js:5:5)
+    at async meta (/Users/wangpeng/learn/app/lengband-blog/lengband-blog-service-mongo/node_modules/egg/app/middleware/meta.js:12:5)
+    at async cors (/Users/wangpeng/learn/app/lengband-blog/lengband-blog-service-mongo/node_modules/@koa/cors/index.js:88:16)
+message: "用户名或密码不正确"
+headers: {"Access-Control-Allow-Origin":"http://localhost:4444","Access-Control-Allow-Credentials":"true","vary":"Origin"}
+pid: 17596
+hostname: wangpengdeMBP.lan
+
+2020-02-17 16:38:13,164 ERROR 18751 [-/127.0.0.1/-/117ms POST /api/login] nodejs.Error: Expected "payload" to be a plain object.
+    at validate (/Users/wangpeng/learn/app/lengband-blog/lengband-blog-service-mongo/node_modules/jsonwebtoken/sign.js:40:11)
+    at validatePayload (/Users/wangpeng/learn/app/lengband-blog/lengband-blog-service-mongo/node_modules/jsonwebtoken/sign.js:62:10)
+    at Object.module.exports [as sign] (/Users/wangpeng/learn/app/lengband-blog/lengband-blog-service-mongo/node_modules/jsonwebtoken/sign.js:114:7)
+    at AsyncFunction.<computed>.sign (/Users/wangpeng/learn/app/lengband-blog/lengband-blog-service-mongo/node_modules/egg-jwt/app/extend/application.js:24:20)
+    at UserController.login (/Users/wangpeng/learn/app/lengband-blog/lengband-blog-service-mongo/app/controller/user.js:14:31)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async /Users/wangpeng/learn/app/lengband-blog/lengband-blog-service-mongo/node_modules/egg-development/app/middleware/egg_loader_trace.js:9:50
+    at async xframe (/Users/wangpeng/learn/app/lengband-blog/lengband-blog-service-mongo/node_modules/egg-security/lib/middlewares/xframe.js:7:5)
+    at async xssProtection (/Users/wangpeng/learn/app/lengband-blog/lengband-blog-service-mongo/node_modules/egg-security/lib/middlewares/xssProtection.js:7:5)
+    at async nosniff (/Users/wangpeng/learn/app/lengband-blog/lengband-blog-service-mongo/node_modules/egg-security/lib/middlewares/nosniff.js:8:5)
+    at async noopen (/Users/wangpeng/learn/app/lengband-blog/lengband-blog-service-mongo/node_modules/egg-security/lib/middlewares/noopen.js:8:5)
+    at async session (/Users/wangpeng/learn/app/lengband-blog/lengband-blog-service-mongo/node_modules/koa-session/index.js:41:7)
+    at async bodyParser (/Users/wangpeng/learn/app/lengband-blog/lengband-blog-service-mongo/node_modules/koa-bodyparser/index.js:86:5)
+    at async /Users/wangpeng/learn/app/lengband-blog/lengband-blog-service-mongo/node_modules/koa-static-cache/index.js:51:63
+    at async notfound (/Users/wangpeng/learn/app/lengband-blog/lengband-blog-service-mongo/node_modules/egg/app/middleware/notfound.js:5:5)
+    at async meta (/Users/wangpeng/learn/app/lengband-blog/lengband-blog-service-mongo/node_modules/egg/app/middleware/meta.js:12:5)
+headers: {"Access-Control-Allow-Origin":"http://localhost:4444","Access-Control-Allow-Credentials":"true","vary":"Origin"}
+pid: 18751
+hostname: wangpengdeMBP.lan
+
+2020-02-17 16:39:43,584 ERROR 18751 [-/127.0.0.1/-/34ms POST /api/login] nodejs.Error: Expected "payload" to be a plain object.
+    at validate (/Users/wangpeng/learn/app/lengband-blog/lengband-blog-service-mongo/node_modules/jsonwebtoken/sign.js:40:11)
+    at validatePayload (/Users/wangpeng/learn/app/lengband-blog/lengband-blog-service-mongo/node_modules/jsonwebtoken/sign.js:62:10)
+    at Object.module.exports [as sign] (/Users/wangpeng/learn/app/lengband-blog/lengband-blog-service-mongo/node_modules/jsonwebtoken/sign.js:114:7)
+    at AsyncFunction.<computed>.sign (/Users/wangpeng/learn/app/lengband-blog/lengband-blog-service-mongo/node_modules/egg-jwt/app/extend/application.js:24:20)
+    at UserController.login (/Users/wangpeng/learn/app/lengband-blog/lengband-blog-service-mongo/app/controller/user.js:14:31)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async /Users/wangpeng/learn/app/lengband-blog/lengband-blog-service-mongo/node_modules/egg-development/app/middleware/egg_loader_trace.js:9:50
+    at async xframe (/Users/wangpeng/learn/app/lengband-blog/lengband-blog-service-mongo/node_modules/egg-security/lib/middlewares/xframe.js:7:5)
+    at async xssProtection (/Users/wangpeng/learn/app/lengband-blog/lengband-blog-service-mongo/node_modules/egg-security/lib/middlewares/xssProtection.js:7:5)
+    at async nosniff (/Users/wangpeng/learn/app/lengband-blog/lengband-blog-service-mongo/node_modules/egg-security/lib/middlewares/nosniff.js:8:5)
+    at async noopen (/Users/wangpeng/learn/app/lengband-blog/lengband-blog-service-mongo/node_modules/egg-security/lib/middlewares/noopen.js:8:5)
+    at async session (/Users/wangpeng/learn/app/lengband-blog/lengband-blog-service-mongo/node_modules/koa-session/index.js:41:7)
+    at async bodyParser (/Users/wangpeng/learn/app/lengband-blog/lengband-blog-service-mongo/node_modules/koa-bodyparser/index.js:86:5)
+    at async /Users/wangpeng/learn/app/lengband-blog/lengband-blog-service-mongo/node_modules/koa-static-cache/index.js:51:63
+    at async notfound (/Users/wangpeng/learn/app/lengband-blog/lengband-blog-service-mongo/node_modules/egg/app/middleware/notfound.js:5:5)
+    at async meta (/Users/wangpeng/learn/app/lengband-blog/lengband-blog-service-mongo/node_modules/egg/app/middleware/meta.js:12:5)
+headers: {"Access-Control-Allow-Origin":"http://localhost:4444","Access-Control-Allow-Credentials":"true","vary":"Origin"}
+pid: 18751
+hostname: wangpengdeMBP.lan
+
+2020-02-17 16:41:14,735 ERROR 18835 [-/127.0.0.1/-/68ms POST /api/login] nodejs.Error: Expected "payload" to be a plain object.
+    at validate (/Users/wangpeng/learn/app/lengband-blog/lengband-blog-service-mongo/node_modules/jsonwebtoken/sign.js:40:11)
+    at validatePayload (/Users/wangpeng/learn/app/lengband-blog/lengband-blog-service-mongo/node_modules/jsonwebtoken/sign.js:62:10)
+    at Object.module.exports [as sign] (/Users/wangpeng/learn/app/lengband-blog/lengband-blog-service-mongo/node_modules/jsonwebtoken/sign.js:114:7)
+    at AsyncFunction.<computed>.sign (/Users/wangpeng/learn/app/lengband-blog/lengband-blog-service-mongo/node_modules/egg-jwt/app/extend/application.js:24:20)
+    at UserController.login (/Users/wangpeng/learn/app/lengband-blog/lengband-blog-service-mongo/app/controller/user.js:15:31)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async /Users/wangpeng/learn/app/lengband-blog/lengband-blog-service-mongo/node_modules/egg-development/app/middleware/egg_loader_trace.js:9:50
+    at async xframe (/Users/wangpeng/learn/app/lengband-blog/lengband-blog-service-mongo/node_modules/egg-security/lib/middlewares/xframe.js:7:5)
+    at async xssProtection (/Users/wangpeng/learn/app/lengband-blog/lengband-blog-service-mongo/node_modules/egg-security/lib/middlewares/xssProtection.js:7:5)
+    at async nosniff (/Users/wangpeng/learn/app/lengband-blog/lengband-blog-service-mongo/node_modules/egg-security/lib/middlewares/nosniff.js:8:5)
+    at async noopen (/Users/wangpeng/learn/app/lengband-blog/lengband-blog-service-mongo/node_modules/egg-security/lib/middlewares/noopen.js:8:5)
+    at async session (/Users/wangpeng/learn/app/lengband-blog/lengband-blog-service-mongo/node_modules/koa-session/index.js:41:7)
+    at async bodyParser (/Users/wangpeng/learn/app/lengband-blog/lengband-blog-service-mongo/node_modules/koa-bodyparser/index.js:86:5)
+    at async /Users/wangpeng/learn/app/lengband-blog/lengband-blog-service-mongo/node_modules/koa-static-cache/index.js:51:63
+    at async notfound (/Users/wangpeng/learn/app/lengband-blog/lengband-blog-service-mongo/node_modules/egg/app/middleware/notfound.js:5:5)
+    at async meta (/Users/wangpeng/learn/app/lengband-blog/lengband-blog-service-mongo/node_modules/egg/app/middleware/meta.js:12:5)
+headers: {"Access-Control-Allow-Origin":"http://localhost:4444","Access-Control-Allow-Credentials":"true","vary":"Origin"}
+pid: 18835
+hostname: wangpengdeMBP.lan
+
+2020-02-17 16:41:45,158 ERROR 18835 [-/127.0.0.1/-/47ms POST /api/login] nodejs.Error: Expected "payload" to be a plain object.
+    at validate (/Users/wangpeng/learn/app/lengband-blog/lengband-blog-service-mongo/node_modules/jsonwebtoken/sign.js:40:11)
+    at validatePayload (/Users/wangpeng/learn/app/lengband-blog/lengband-blog-service-mongo/node_modules/jsonwebtoken/sign.js:62:10)
+    at Object.module.exports [as sign] (/Users/wangpeng/learn/app/lengband-blog/lengband-blog-service-mongo/node_modules/jsonwebtoken/sign.js:114:7)
+    at AsyncFunction.<computed>.sign (/Users/wangpeng/learn/app/lengband-blog/lengband-blog-service-mongo/node_modules/egg-jwt/app/extend/application.js:24:20)
+    at UserController.login (/Users/wangpeng/learn/app/lengband-blog/lengband-blog-service-mongo/app/controller/user.js:15:31)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async /Users/wangpeng/learn/app/lengband-blog/lengband-blog-service-mongo/node_modules/egg-development/app/middleware/egg_loader_trace.js:9:50
+    at async xframe (/Users/wangpeng/learn/app/lengband-blog/lengband-blog-service-mongo/node_modules/egg-security/lib/middlewares/xframe.js:7:5)
+    at async xssProtection (/Users/wangpeng/learn/app/lengband-blog/lengband-blog-service-mongo/node_modules/egg-security/lib/middlewares/xssProtection.js:7:5)
+    at async nosniff (/Users/wangpeng/learn/app/lengband-blog/lengband-blog-service-mongo/node_modules/egg-security/lib/middlewares/nosniff.js:8:5)
+    at async noopen (/Users/wangpeng/learn/app/lengband-blog/lengband-blog-service-mongo/node_modules/egg-security/lib/middlewares/noopen.js:8:5)
+    at async session (/Users/wangpeng/learn/app/lengband-blog/lengband-blog-service-mongo/node_modules/koa-session/index.js:41:7)
+    at async bodyParser (/Users/wangpeng/learn/app/lengband-blog/lengband-blog-service-mongo/node_modules/koa-bodyparser/index.js:86:5)
+    at async /Users/wangpeng/learn/app/lengband-blog/lengband-blog-service-mongo/node_modules/koa-static-cache/index.js:51:63
+    at async notfound (/Users/wangpeng/learn/app/lengband-blog/lengband-blog-service-mongo/node_modules/egg/app/middleware/notfound.js:5:5)
+    at async meta (/Users/wangpeng/learn/app/lengband-blog/lengband-blog-service-mongo/node_modules/egg/app/middleware/meta.js:12:5)
+headers: {"Access-Control-Allow-Origin":"http://localhost:4444","Access-Control-Allow-Credentials":"true","vary":"Origin"}
+pid: 18835
+hostname: wangpengdeMBP.lan
+
+2020-02-17 16:42:46,558 ERROR 18869 [-/127.0.0.1/-/210ms POST /api/login] nodejs.Error: Expected "payload" to be a plain object.
+    at validate (/Users/wangpeng/learn/app/lengband-blog/lengband-blog-service-mongo/node_modules/jsonwebtoken/sign.js:40:11)
+    at validatePayload (/Users/wangpeng/learn/app/lengband-blog/lengband-blog-service-mongo/node_modules/jsonwebtoken/sign.js:62:10)
+    at Object.module.exports [as sign] (/Users/wangpeng/learn/app/lengband-blog/lengband-blog-service-mongo/node_modules/jsonwebtoken/sign.js:114:7)
+    at AsyncFunction.<computed>.sign (/Users/wangpeng/learn/app/lengband-blog/lengband-blog-service-mongo/node_modules/egg-jwt/app/extend/application.js:24:20)
+    at UserController.login (/Users/wangpeng/learn/app/lengband-blog/lengband-blog-service-mongo/app/controller/user.js:15:31)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async /Users/wangpeng/learn/app/lengband-blog/lengband-blog-service-mongo/node_modules/egg-development/app/middleware/egg_loader_trace.js:9:50
+    at async xframe (/Users/wangpeng/learn/app/lengband-blog/lengband-blog-service-mongo/node_modules/egg-security/lib/middlewares/xframe.js:7:5)
+    at async xssProtection (/Users/wangpeng/learn/app/lengband-blog/lengband-blog-service-mongo/node_modules/egg-security/lib/middlewares/xssProtection.js:7:5)
+    at async nosniff (/Users/wangpeng/learn/app/lengband-blog/lengband-blog-service-mongo/node_modules/egg-security/lib/middlewares/nosniff.js:8:5)
+    at async noopen (/Users/wangpeng/learn/app/lengband-blog/lengband-blog-service-mongo/node_modules/egg-security/lib/middlewares/noopen.js:8:5)
+    at async session (/Users/wangpeng/learn/app/lengband-blog/lengband-blog-service-mongo/node_modules/koa-session/index.js:41:7)
+    at async bodyParser (/Users/wangpeng/learn/app/lengband-blog/lengband-blog-service-mongo/node_modules/koa-bodyparser/index.js:86:5)
+    at async /Users/wangpeng/learn/app/lengband-blog/lengband-blog-service-mongo/node_modules/koa-static-cache/index.js:51:63
+    at async notfound (/Users/wangpeng/learn/app/lengband-blog/lengband-blog-service-mongo/node_modules/egg/app/middleware/notfound.js:5:5)
+    at async meta (/Users/wangpeng/learn/app/lengband-blog/lengband-blog-service-mongo/node_modules/egg/app/middleware/meta.js:12:5)
+headers: {"Access-Control-Allow-Origin":"http://localhost:4444","Access-Control-Allow-Credentials":"true","vary":"Origin"}
+pid: 18869
+hostname: wangpengdeMBP.lan
+
+2020-02-17 16:43:43,938 ERROR 18994 [-/127.0.0.1/-/42ms POST /api/login] nodejs.Error: Expected "payload" to be a plain object.
+    at validate (/Users/wangpeng/learn/app/lengband-blog/lengband-blog-service-mongo/node_modules/jsonwebtoken/sign.js:40:11)
+    at validatePayload (/Users/wangpeng/learn/app/lengband-blog/lengband-blog-service-mongo/node_modules/jsonwebtoken/sign.js:62:10)
+    at Object.module.exports [as sign] (/Users/wangpeng/learn/app/lengband-blog/lengband-blog-service-mongo/node_modules/jsonwebtoken/sign.js:114:7)
+    at AsyncFunction.<computed>.sign (/Users/wangpeng/learn/app/lengband-blog/lengband-blog-service-mongo/node_modules/egg-jwt/app/extend/application.js:24:20)
+    at UserController.login (/Users/wangpeng/learn/app/lengband-blog/lengband-blog-service-mongo/app/controller/user.js:16:31)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async /Users/wangpeng/learn/app/lengband-blog/lengband-blog-service-mongo/node_modules/egg-development/app/middleware/egg_loader_trace.js:9:50
+    at async xframe (/Users/wangpeng/learn/app/lengband-blog/lengband-blog-service-mongo/node_modules/egg-security/lib/middlewares/xframe.js:7:5)
+    at async xssProtection (/Users/wangpeng/learn/app/lengband-blog/lengband-blog-service-mongo/node_modules/egg-security/lib/middlewares/xssProtection.js:7:5)
+    at async nosniff (/Users/wangpeng/learn/app/lengband-blog/lengband-blog-service-mongo/node_modules/egg-security/lib/middlewares/nosniff.js:8:5)
+    at async noopen (/Users/wangpeng/learn/app/lengband-blog/lengband-blog-service-mongo/node_modules/egg-security/lib/middlewares/noopen.js:8:5)
+    at async session (/Users/wangpeng/learn/app/lengband-blog/lengband-blog-service-mongo/node_modules/koa-session/index.js:41:7)
+    at async bodyParser (/Users/wangpeng/learn/app/lengband-blog/lengband-blog-service-mongo/node_modules/koa-bodyparser/index.js:86:5)
+    at async /Users/wangpeng/learn/app/lengband-blog/lengband-blog-service-mongo/node_modules/koa-static-cache/index.js:51:63
+    at async notfound (/Users/wangpeng/learn/app/lengband-blog/lengband-blog-service-mongo/node_modules/egg/app/middleware/notfound.js:5:5)
+    at async meta (/Users/wangpeng/learn/app/lengband-blog/lengband-blog-service-mongo/node_modules/egg/app/middleware/meta.js:12:5)
+headers: {"Access-Control-Allow-Origin":"http://localhost:4444","Access-Control-Allow-Credentials":"true","vary":"Origin"}
+pid: 18994
+hostname: wangpengdeMBP.lan
+
+2020-02-17 16:44:08,149 ERROR 18994 [-/127.0.0.1/-/16ms POST /api/login] nodejs.Error: Expected "payload" to be a plain object.
+    at validate (/Users/wangpeng/learn/app/lengband-blog/lengband-blog-service-mongo/node_modules/jsonwebtoken/sign.js:40:11)
+    at validatePayload (/Users/wangpeng/learn/app/lengband-blog/lengband-blog-service-mongo/node_modules/jsonwebtoken/sign.js:62:10)
+    at Object.module.exports [as sign] (/Users/wangpeng/learn/app/lengband-blog/lengband-blog-service-mongo/node_modules/jsonwebtoken/sign.js:114:7)
+    at AsyncFunction.<computed>.sign (/Users/wangpeng/learn/app/lengband-blog/lengband-blog-service-mongo/node_modules/egg-jwt/app/extend/application.js:24:20)
+    at UserController.login (/Users/wangpeng/learn/app/lengband-blog/lengband-blog-service-mongo/app/controller/user.js:16:31)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async /Users/wangpeng/learn/app/lengband-blog/lengband-blog-service-mongo/node_modules/egg-development/app/middleware/egg_loader_trace.js:9:50
+    at async xframe (/Users/wangpeng/learn/app/lengband-blog/lengband-blog-service-mongo/node_modules/egg-security/lib/middlewares/xframe.js:7:5)
+    at async xssProtection (/Users/wangpeng/learn/app/lengband-blog/lengband-blog-service-mongo/node_modules/egg-security/lib/middlewares/xssProtection.js:7:5)
+    at async nosniff (/Users/wangpeng/learn/app/lengband-blog/lengband-blog-service-mongo/node_modules/egg-security/lib/middlewares/nosniff.js:8:5)
+    at async noopen (/Users/wangpeng/learn/app/lengband-blog/lengband-blog-service-mongo/node_modules/egg-security/lib/middlewares/noopen.js:8:5)
+    at async session (/Users/wangpeng/learn/app/lengband-blog/lengband-blog-service-mongo/node_modules/koa-session/index.js:41:7)
+    at async bodyParser (/Users/wangpeng/learn/app/lengband-blog/lengband-blog-service-mongo/node_modules/koa-bodyparser/index.js:86:5)
+    at async /Users/wangpeng/learn/app/lengband-blog/lengband-blog-service-mongo/node_modules/koa-static-cache/index.js:51:63
+    at async notfound (/Users/wangpeng/learn/app/lengband-blog/lengband-blog-service-mongo/node_modules/egg/app/middleware/notfound.js:5:5)
+    at async meta (/Users/wangpeng/learn/app/lengband-blog/lengband-blog-service-mongo/node_modules/egg/app/middleware/meta.js:12:5)
+headers: {"Access-Control-Allow-Origin":"http://localhost:4444","Access-Control-Allow-Credentials":"true","vary":"Origin"}
+pid: 18994
+hostname: wangpengdeMBP.lan
+

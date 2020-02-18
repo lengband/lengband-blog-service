@@ -1,0 +1,151 @@
+# REST Client for Visual Studio Code
+# https://marketplace.visualstudio.com/items?itemName=humao.rest-client
+
+// 用户
+### 用户登录
+# @name tokenResponese
+POST http://127.0.0.1:7001/api/login HTTP/1.1
+content-type: application/json
+
+{
+  "name": "wp",
+  "password": "wp"
+}
+
+
+### 用户新建
+POST http://127.0.0.1:7001/api/user/create HTTP/1.1
+content-type: application/json
+Authorization: Bearer {{tokenResponese.response.body.token}}
+
+{
+  "name": "wp1",
+  "age": 20,
+  "password": "wp1",
+  "gender": "male",
+  "headline": "headline  --test",
+  "role": "5e4a4500e3748b43d0273ffb"
+}
+
+
+### 获取用户列表
+GET http://127.0.0.1:7001/api/user HTTP/1.1
+content-type: application/json
+
+
+### 删除用户
+DELETE http://127.0.0.1:7001/api/user/5e47618e4d36121293129c5f HTTP/1.1 
+Authorization: Bearer {{tokenResponese.response.body.token}}
+
+
+
+// 角色
+### 新建角色
+POST http://127.0.0.1:7001/api/role/create HTTP/1.1
+content-type: application/json
+Authorization: Bearer {{tokenResponese.response.body.token}}
+
+{
+  "name": "admin"
+}
+
+
+### 获取角色列表
+GET http://127.0.0.1:7001/api/role HTTP/1.1
+content-type: application/json
+
+
+### 获取角色信息
+GET http://127.0.0.1:7001/api/role/5e48c1253c0a7b0e9beb23d7 HTTP/1.1
+content-type: application/json
+
+
+### 删除角色
+DELETE http://127.0.0.1:7001/api/role/5e3fc83dda4cec33e2815a3f HTTP/1.1 
+Authorization: Bearer {{tokenResponese.response.body.token}}
+
+
+
+// 文章类别
+### 新建文章类别
+POST http://127.0.0.1:7001/api/type/create HTTP/1.1
+content-type: application/json
+Authorization: Bearer {{tokenResponese.response.body.token}}
+
+{
+  "name": "other",
+  "cn_name": "其他"
+}
+
+
+### 获取文章类别列表
+GET http://127.0.0.1:7001/api/type HTTP/1.1
+content-type: application/json
+
+
+### 删除文章类别
+DELETE http://127.0.0.1:7001/api/type/5e4775ba8382061716a948af HTTP/1.1
+Authorization: Bearer {{tokenResponese.response.body.token}}
+
+
+
+// 文章
+### 新建文章
+POST http://127.0.0.1:7001/api/article/create HTTP/1.1
+content-type: application/json
+Authorization: Bearer {{tokenResponese.response.body.token}}
+
+{
+  "name": "test3",
+  "introduce": "introduce1",
+  "content": "content1",
+  "view_count": 0,
+  "type": "5e4775d68382061716a948b0"
+}
+
+
+### 获取文章列表
+GET http://127.0.0.1:7001/api/article HTTP/1.1
+content-type: application/json
+
+
+### 更新文章
+PATCH http://127.0.0.1:7001/api/article/5e48bcbe4c68ab0c1bc57dee HTTP/1.1
+Authorization: Bearer {{tokenResponese.response.body.token}}
+
+{
+  "name": "12345678",
+}
+
+
+### 获取文章详情
+GET http://127.0.0.1:7001/api/article/:id HTTP/1.1
+content-type: application/json
+
+
+### 删除文章
+DELETE http://127.0.0.1:7001/api/article/5e478b1cce67e41cd9303640 HTTP/1.1
+Authorization: Bearer {{tokenResponese.response.body.token}}
+
+
+
+// 文章标签
+### 新建文章标签
+POST http://127.0.0.1:7001/api/tag/create HTTP/1.1
+content-type: application/json
+Authorization: Bearer {{tokenResponese.response.body.token}}
+
+{
+  "name": "other",
+  "cn_name": "其他"
+}
+
+
+### 获取文章标签列表
+GET http://127.0.0.1:7001/api/tag HTTP/1.1
+content-type: application/json
+
+
+### 删除文章标签
+DELETE http://127.0.0.1:7001/api/tag/5e4775ba8382061716a948af HTTP/1.1
+Authorization: Bearer {{tokenResponese.response.body.token}}

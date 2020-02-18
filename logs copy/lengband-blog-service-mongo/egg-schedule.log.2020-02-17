@@ -1,0 +1,57 @@
+2020-02-17 15:38:23,880 INFO 16751 [egg-schedule]: register schedule /Users/wangpeng/learn/app/lengband-blog/lengband-blog-service-mongo/node_modules/egg-multipart/app/schedule/clean_tmpdir.js
+2020-02-17 15:38:23,880 INFO 16751 [egg-schedule]: register schedule /Users/wangpeng/learn/app/lengband-blog/lengband-blog-service-mongo/node_modules/egg-logrotator/app/schedule/clean_log.js
+2020-02-17 15:38:23,881 INFO 16751 [egg-schedule]: register schedule /Users/wangpeng/learn/app/lengband-blog/lengband-blog-service-mongo/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2020-02-17 15:38:24,334 INFO 16750 [Timer] /Users/wangpeng/learn/app/lengband-blog/lengband-blog-service-mongo/node_modules/egg-multipart/app/schedule/clean_tmpdir.js next time will execute after 46295670ms at 2020-02-18 04:30:00.004
+2020-02-17 15:38:24,334 INFO 16750 [Timer] /Users/wangpeng/learn/app/lengband-blog/lengband-blog-service-mongo/node_modules/egg-logrotator/app/schedule/clean_log.js next time will execute after 30095666ms at 2020-02-18 00:00:00.000
+2020-02-17 15:38:24,335 INFO 16750 [Timer] /Users/wangpeng/learn/app/lengband-blog/lengband-blog-service-mongo/node_modules/egg-logrotator/app/schedule/rotate_by_file.js next time will execute after 30096666ms at 2020-02-18 00:00:01.001
+2020-02-17 15:45:35,790 INFO 17300 [egg-schedule]: register schedule /Users/wangpeng/learn/app/lengband-blog/lengband-blog-service-mongo/node_modules/egg-multipart/app/schedule/clean_tmpdir.js
+2020-02-17 15:45:35,790 INFO 17300 [egg-schedule]: register schedule /Users/wangpeng/learn/app/lengband-blog/lengband-blog-service-mongo/node_modules/egg-logrotator/app/schedule/clean_log.js
+2020-02-17 15:45:35,790 INFO 17300 [egg-schedule]: register schedule /Users/wangpeng/learn/app/lengband-blog/lengband-blog-service-mongo/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2020-02-17 15:45:36,429 INFO 17298 [Timer] /Users/wangpeng/learn/app/lengband-blog/lengband-blog-service-mongo/node_modules/egg-multipart/app/schedule/clean_tmpdir.js next time will execute after 45863573ms at 2020-02-18 04:30:00.002
+2020-02-17 15:45:36,429 INFO 17298 [Timer] /Users/wangpeng/learn/app/lengband-blog/lengband-blog-service-mongo/node_modules/egg-logrotator/app/schedule/clean_log.js next time will execute after 29663571ms at 2020-02-18 00:00:00.000
+2020-02-17 15:45:36,429 INFO 17298 [Timer] /Users/wangpeng/learn/app/lengband-blog/lengband-blog-service-mongo/node_modules/egg-logrotator/app/schedule/rotate_by_file.js next time will execute after 29664571ms at 2020-02-18 00:00:01.000
+2020-02-17 15:45:52,466 INFO 17336 [egg-schedule]: register schedule /Users/wangpeng/learn/app/lengband-blog/lengband-blog-service-mongo/node_modules/egg-multipart/app/schedule/clean_tmpdir.js
+2020-02-17 15:45:52,467 INFO 17336 [egg-schedule]: register schedule /Users/wangpeng/learn/app/lengband-blog/lengband-blog-service-mongo/node_modules/egg-logrotator/app/schedule/clean_log.js
+2020-02-17 15:45:52,467 INFO 17336 [egg-schedule]: register schedule /Users/wangpeng/learn/app/lengband-blog/lengband-blog-service-mongo/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2020-02-17 15:46:21,673 INFO 17360 [egg-schedule]: register schedule /Users/wangpeng/learn/app/lengband-blog/lengband-blog-service-mongo/node_modules/egg-multipart/app/schedule/clean_tmpdir.js
+2020-02-17 15:46:21,673 INFO 17360 [egg-schedule]: register schedule /Users/wangpeng/learn/app/lengband-blog/lengband-blog-service-mongo/node_modules/egg-logrotator/app/schedule/clean_log.js
+2020-02-17 15:46:21,673 INFO 17360 [egg-schedule]: register schedule /Users/wangpeng/learn/app/lengband-blog/lengband-blog-service-mongo/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2020-02-17 15:48:37,381 INFO 17447 [egg-schedule]: register schedule /Users/wangpeng/learn/app/lengband-blog/lengband-blog-service-mongo/node_modules/egg-multipart/app/schedule/clean_tmpdir.js
+2020-02-17 15:48:37,381 INFO 17447 [egg-schedule]: register schedule /Users/wangpeng/learn/app/lengband-blog/lengband-blog-service-mongo/node_modules/egg-logrotator/app/schedule/clean_log.js
+2020-02-17 15:48:37,381 INFO 17447 [egg-schedule]: register schedule /Users/wangpeng/learn/app/lengband-blog/lengband-blog-service-mongo/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2020-02-17 15:50:43,104 INFO 17596 [egg-schedule]: register schedule /Users/wangpeng/learn/app/lengband-blog/lengband-blog-service-mongo/node_modules/egg-multipart/app/schedule/clean_tmpdir.js
+2020-02-17 15:50:43,104 INFO 17596 [egg-schedule]: register schedule /Users/wangpeng/learn/app/lengband-blog/lengband-blog-service-mongo/node_modules/egg-logrotator/app/schedule/clean_log.js
+2020-02-17 15:50:43,104 INFO 17596 [egg-schedule]: register schedule /Users/wangpeng/learn/app/lengband-blog/lengband-blog-service-mongo/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2020-02-17 16:36:09,672 INFO 18693 [egg-schedule]: register schedule /Users/wangpeng/learn/app/lengband-blog/lengband-blog-service-mongo/node_modules/egg-multipart/app/schedule/clean_tmpdir.js
+2020-02-17 16:36:09,672 INFO 18693 [egg-schedule]: register schedule /Users/wangpeng/learn/app/lengband-blog/lengband-blog-service-mongo/node_modules/egg-logrotator/app/schedule/clean_log.js
+2020-02-17 16:36:09,672 INFO 18693 [egg-schedule]: register schedule /Users/wangpeng/learn/app/lengband-blog/lengband-blog-service-mongo/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2020-02-17 16:37:01,020 INFO 18726 [egg-schedule]: register schedule /Users/wangpeng/learn/app/lengband-blog/lengband-blog-service-mongo/node_modules/egg-multipart/app/schedule/clean_tmpdir.js
+2020-02-17 16:37:01,020 INFO 18726 [egg-schedule]: register schedule /Users/wangpeng/learn/app/lengband-blog/lengband-blog-service-mongo/node_modules/egg-logrotator/app/schedule/clean_log.js
+2020-02-17 16:37:01,020 INFO 18726 [egg-schedule]: register schedule /Users/wangpeng/learn/app/lengband-blog/lengband-blog-service-mongo/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2020-02-17 16:37:24,601 INFO 18751 [egg-schedule]: register schedule /Users/wangpeng/learn/app/lengband-blog/lengband-blog-service-mongo/node_modules/egg-multipart/app/schedule/clean_tmpdir.js
+2020-02-17 16:37:24,601 INFO 18751 [egg-schedule]: register schedule /Users/wangpeng/learn/app/lengband-blog/lengband-blog-service-mongo/node_modules/egg-logrotator/app/schedule/clean_log.js
+2020-02-17 16:37:24,601 INFO 18751 [egg-schedule]: register schedule /Users/wangpeng/learn/app/lengband-blog/lengband-blog-service-mongo/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2020-02-17 16:41:06,037 INFO 18835 [egg-schedule]: register schedule /Users/wangpeng/learn/app/lengband-blog/lengband-blog-service-mongo/node_modules/egg-multipart/app/schedule/clean_tmpdir.js
+2020-02-17 16:41:06,037 INFO 18835 [egg-schedule]: register schedule /Users/wangpeng/learn/app/lengband-blog/lengband-blog-service-mongo/node_modules/egg-logrotator/app/schedule/clean_log.js
+2020-02-17 16:41:06,037 INFO 18835 [egg-schedule]: register schedule /Users/wangpeng/learn/app/lengband-blog/lengband-blog-service-mongo/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2020-02-17 16:41:47,426 INFO 18869 [egg-schedule]: register schedule /Users/wangpeng/learn/app/lengband-blog/lengband-blog-service-mongo/node_modules/egg-multipart/app/schedule/clean_tmpdir.js
+2020-02-17 16:41:47,426 INFO 18869 [egg-schedule]: register schedule /Users/wangpeng/learn/app/lengband-blog/lengband-blog-service-mongo/node_modules/egg-logrotator/app/schedule/clean_log.js
+2020-02-17 16:41:47,426 INFO 18869 [egg-schedule]: register schedule /Users/wangpeng/learn/app/lengband-blog/lengband-blog-service-mongo/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2020-02-17 16:42:44,965 INFO 18912 [egg-schedule]: register schedule /Users/wangpeng/learn/app/lengband-blog/lengband-blog-service-mongo/node_modules/egg-multipart/app/schedule/clean_tmpdir.js
+2020-02-17 16:42:44,965 INFO 18912 [egg-schedule]: register schedule /Users/wangpeng/learn/app/lengband-blog/lengband-blog-service-mongo/node_modules/egg-logrotator/app/schedule/clean_log.js
+2020-02-17 16:42:44,965 INFO 18912 [egg-schedule]: register schedule /Users/wangpeng/learn/app/lengband-blog/lengband-blog-service-mongo/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2020-02-17 16:43:31,618 INFO 18994 [egg-schedule]: register schedule /Users/wangpeng/learn/app/lengband-blog/lengband-blog-service-mongo/node_modules/egg-multipart/app/schedule/clean_tmpdir.js
+2020-02-17 16:43:31,618 INFO 18994 [egg-schedule]: register schedule /Users/wangpeng/learn/app/lengband-blog/lengband-blog-service-mongo/node_modules/egg-logrotator/app/schedule/clean_log.js
+2020-02-17 16:43:31,618 INFO 18994 [egg-schedule]: register schedule /Users/wangpeng/learn/app/lengband-blog/lengband-blog-service-mongo/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2020-02-17 16:46:46,641 INFO 19040 [egg-schedule]: register schedule /Users/wangpeng/learn/app/lengband-blog/lengband-blog-service-mongo/node_modules/egg-multipart/app/schedule/clean_tmpdir.js
+2020-02-17 16:46:46,641 INFO 19040 [egg-schedule]: register schedule /Users/wangpeng/learn/app/lengband-blog/lengband-blog-service-mongo/node_modules/egg-logrotator/app/schedule/clean_log.js
+2020-02-17 16:46:46,641 INFO 19040 [egg-schedule]: register schedule /Users/wangpeng/learn/app/lengband-blog/lengband-blog-service-mongo/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2020-02-17 16:48:22,556 INFO 19092 [egg-schedule]: register schedule /Users/wangpeng/learn/app/lengband-blog/lengband-blog-service-mongo/node_modules/egg-multipart/app/schedule/clean_tmpdir.js
+2020-02-17 16:48:22,556 INFO 19092 [egg-schedule]: register schedule /Users/wangpeng/learn/app/lengband-blog/lengband-blog-service-mongo/node_modules/egg-logrotator/app/schedule/clean_log.js
+2020-02-17 16:48:22,556 INFO 19092 [egg-schedule]: register schedule /Users/wangpeng/learn/app/lengband-blog/lengband-blog-service-mongo/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2020-02-18 00:00:00,248 INFO 19092 [Job#1581955200191493825826274821] /Users/wangpeng/learn/app/lengband-blog/lengband-blog-service-mongo/node_modules/egg-logrotator/app/schedule/clean_log.js executing by app
+2020-02-18 00:00:00,331 INFO 19092 [Job#1581955200191493825826274821] /Users/wangpeng/learn/app/lengband-blog/lengband-blog-service-mongo/node_modules/egg-logrotator/app/schedule/clean_log.js execute succeed, used 61ms
+2020-02-18 00:00:00,234 INFO 17298 [Timer] /Users/wangpeng/learn/app/lengband-blog/lengband-blog-service-mongo/node_modules/egg-logrotator/app/schedule/clean_log.js next time will execute after 86399788ms at 2020-02-19 00:00:00.021
+2020-02-18 00:00:01,165 INFO 19092 [Job#1581955201164493835508112311] /Users/wangpeng/learn/app/lengband-blog/lengband-blog-service-mongo/node_modules/egg-logrotator/app/schedule/rotate_by_file.js executing by app
+2020-02-18 00:00:01,178 INFO 19092 [Job#1581955201164493835508112311] /Users/wangpeng/learn/app/lengband-blog/lengband-blog-service-mongo/node_modules/egg-logrotator/app/schedule/rotate_by_file.js execute succeed, used 13ms
+2020-02-18 00:00:01,167 INFO 17298 [Timer] /Users/wangpeng/learn/app/lengband-blog/lengband-blog-service-mongo/node_modules/egg-logrotator/app/schedule/rotate_by_file.js next time will execute after 86399836ms at 2020-02-19 00:00:01.003

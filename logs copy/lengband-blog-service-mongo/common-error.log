@@ -1,0 +1,27 @@
+2020-02-18 10:59:45,117 ERROR 28789 [-/127.0.0.1/-/3ms DELETE /api/tag/undefined] nodejs.CastError: Cast to ObjectId failed for value "undefined" at path "_id" for model "Tag"
+    at new CastError (/Users/wangpeng/learn/app/lengband-blog/lengband-blog-service-mongo/node_modules/mongoose/lib/error/cast.js:39:11)
+    at ObjectId.cast (/Users/wangpeng/learn/app/lengband-blog/lengband-blog-service-mongo/node_modules/mongoose/lib/schema/objectid.js:269:11)
+    at ObjectId.SchemaType.applySetters (/Users/wangpeng/learn/app/lengband-blog/lengband-blog-service-mongo/node_modules/mongoose/lib/schematype.js:1010:12)
+    at ObjectId.SchemaType._castForQuery (/Users/wangpeng/learn/app/lengband-blog/lengband-blog-service-mongo/node_modules/mongoose/lib/schematype.js:1424:15)
+    at ObjectId.SchemaType.castForQuery (/Users/wangpeng/learn/app/lengband-blog/lengband-blog-service-mongo/node_modules/mongoose/lib/schematype.js:1414:15)
+    at ObjectId.SchemaType.castForQueryWrapper (/Users/wangpeng/learn/app/lengband-blog/lengband-blog-service-mongo/node_modules/mongoose/lib/schematype.js:1393:15)
+    at cast (/Users/wangpeng/learn/app/lengband-blog/lengband-blog-service-mongo/node_modules/mongoose/lib/cast.js:315:32)
+    at model.Query.Query.cast (/Users/wangpeng/learn/app/lengband-blog/lengband-blog-service-mongo/node_modules/mongoose/lib/query.js:4684:12)
+    at castQuery (/Users/wangpeng/learn/app/lengband-blog/lengband-blog-service-mongo/node_modules/mongoose/lib/query.js:4496:18)
+    at model.Query.Query._findAndModify (/Users/wangpeng/learn/app/lengband-blog/lengband-blog-service-mongo/node_modules/mongoose/lib/query.js:3440:23)
+    at model.Query.<anonymous> (/Users/wangpeng/learn/app/lengband-blog/lengband-blog-service-mongo/node_modules/mongoose/lib/query.js:3403:8)
+    at model.Query._wrappedThunk [as _findOneAndRemove] (/Users/wangpeng/learn/app/lengband-blog/lengband-blog-service-mongo/node_modules/mongoose/lib/helpers/query/wrapThunk.js:16:8)
+    at /Users/wangpeng/learn/app/lengband-blog/lengband-blog-service-mongo/node_modules/kareem/index.js:369:33
+    at processTicksAndRejections (internal/process/task_queues.js:75:11)
+stringValue: "\"undefined\""
+kind: "ObjectId"
+value: "undefined"
+path: "_id"
+reason: {}
+message: "Cast to ObjectId failed for value \"undefined\" at path \"_id\" for model \"Tag\""
+name: "CastError"
+model: undefined
+headers: {"Access-Control-Allow-Origin":"http://localhost:4444","Access-Control-Allow-Credentials":"true","vary":"Origin"}
+pid: 28789
+hostname: wangpengdeMBP.lan
+
