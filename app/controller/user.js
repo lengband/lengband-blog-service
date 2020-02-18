@@ -47,7 +47,7 @@ class UserController extends Controller {
   }
   async delete() {
     const { ctx } = this;
-    const user = await ctx.model.User.findOneAndDelete(ctx.params.id);
+    const user = await ctx.model.User.findByIdAndRemove(ctx.params.id);
     ctx.status = user ? 204 : 404;
   }
 }

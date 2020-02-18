@@ -24,6 +24,7 @@ module.exports = app => {
   router.get('/api/type', controller.type.getTypeList);
   router.post('/api/type/create', app.jwt, controller.type.create);
   router.delete('/api/type/:id', app.jwt, controller.type.delete);
+  router.patch('/api/type/:id', app.jwt, controller.type.update);
   // 文章
   router.get('/api/article', controller.article.getArticleList);
   router.get('/api/article/:id', controller.article.getArticleInfo);

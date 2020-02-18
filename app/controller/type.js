@@ -22,9 +22,15 @@ class TypeController extends Controller {
     const type = await new ctx.model.Type(ctx.request.body).save();
     ctx.body = type;
   }
+  async update() {
+    const { ctx } = this;
+    const typeId = ctx.params.id;
+    const type = await ctx.model.Type.update({ _id: typeId }, { $set: ctx.request.body });
+    ctx.body = type;
+  }
   async delete() {
     const { ctx } = this;
-    const type = await ctx.model.Type.findOneAndDelete(ctx.params.id);
+    const type = await ctx.model.Type.findByIdAndRemove(ctx.params.id);
     ctx.status = type ? 204 : 404;
   }
 }

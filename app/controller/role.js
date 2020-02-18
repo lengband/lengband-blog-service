@@ -24,7 +24,7 @@ class RoleController extends Controller {
   }
   async delete() {
     const { ctx } = this;
-    const role = await ctx.model.Role.findOneAndDelete(ctx.params.id);
+    const role = await ctx.model.Role.findByIdAndRemove(ctx.params.id);
     ctx.status = role ? 204 : 404;
   }
 }
