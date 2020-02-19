@@ -4,7 +4,7 @@ module.exports = app => {
   const mongoose = app.mongoose;
   const Schema = mongoose.Schema;
 
-  const ArticleSchema = new Schema({
+  const PostSchema = new Schema({
     name: {
       type: String,
       required: true,
@@ -36,5 +36,5 @@ module.exports = app => {
     timestamps: true, // 将自动添加 createAt 和 updateAt 两个字段
   });
 
-  return mongoose.model('Article', ArticleSchema);
+  return mongoose.model('Post', PostSchema);
 };

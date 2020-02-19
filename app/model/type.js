@@ -13,7 +13,7 @@ module.exports = app => {
       type: String,
       required: true,
     },
-    article_num: {
+    post_num: {
       type: Number,
       default: 0,
     },

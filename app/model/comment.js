@@ -13,9 +13,9 @@ module.exports = app => {
       type: Schema.Types.ObjectId,
       ref: 'User',
     },
-    fromArticle: { // 评论的文章
+    fromPost: { // 评论的文章
       type: Schema.Types.ObjectId,
-      ref: 'Article',
+      ref: 'Post',
     },
     replyComment: { // 回复的评论
       type: Schema.Types.ObjectId,

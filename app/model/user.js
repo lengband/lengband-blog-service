@@ -20,7 +20,7 @@ module.exports = app => {
     email: {
       type: String,
     },
-    article_num: {
+    post_num: {
       type: Number,
       default: 0,
     },

@@ -22,11 +22,11 @@ module.exports = app => {
   router.delete('/api/type/:id', app.jwt, controller.type.delete);
   router.patch('/api/type/:id', app.jwt, controller.type.update);
   // 文章
-  router.get('/api/article', controller.article.getArticleList);
-  router.get('/api/article/:id', controller.article.getArticleInfo);
-  router.post('/api/article/create', app.jwt, controller.article.create);
-  router.delete('/api/article/:id', app.jwt, controller.article.delete);
-  router.patch('/api/article/:id', app.jwt, controller.article.update);
+  router.get('/api/post', controller.post.getPostList);
+  router.get('/api/post/:id', controller.post.getPostInfo);
+  router.post('/api/post/create', app.jwt, controller.post.create);
+  router.delete('/api/post/:id', app.jwt, controller.post.delete);
+  router.patch('/api/post/:id', app.jwt, controller.post.update);
   // 文章标签
   router.get('/api/tag', controller.tag.getTagList);
   router.post('/api/tag/create', app.jwt, controller.tag.create);
