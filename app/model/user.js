@@ -9,6 +9,9 @@ module.exports = app => {
       type: String,
       required: true,
     },
+    cn_name: { // 昵称
+      type: String,
+    },
     password: {
       type: String,
       required: true,

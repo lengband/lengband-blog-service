@@ -15,6 +15,7 @@ module.exports = app => {
   router.post('/api/user/create', app.jwt, controller.user.create);
   router.delete('/api/user/:id', app.jwt, controller.user.delete);
   router.post('/api/login', controller.user.login); // 登录校验
+  router.patch('/api/user/:id', app.jwt, controller.user.update);
   // 文章类别
   router.get('/api/type', controller.type.getTypeList);
   router.post('/api/type/create', app.jwt, controller.type.create);

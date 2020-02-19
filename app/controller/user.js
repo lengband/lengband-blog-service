@@ -44,6 +44,12 @@ class UserController extends Controller {
     const userInfo = await ctx.model.User.findById(userId);
     ctx.body = userInfo;
   }
+  async update() {
+    const { ctx } = this;
+    const userId = ctx.params.id;
+    const user = await ctx.model.User.update({ _id: userId }, { $set: ctx.request.body });
+    ctx.body = user;
+  }
   async delete() {
     const { ctx } = this;
     const user = await ctx.model.User.findByIdAndRemove(ctx.params.id);

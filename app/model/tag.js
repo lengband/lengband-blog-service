@@ -17,7 +17,7 @@ module.exports = app => {
       type: Number,
       default: 0,
     },
-    tag_type: {
+    tag_status: {
       type: String,
       required: true,
       enum: [ 'default', 'primary', 'success', 'warning', 'info', 'danger' ], // 与前端 @icedesign/label 的 type 保持一致
