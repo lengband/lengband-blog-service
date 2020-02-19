@@ -24,7 +24,6 @@ Authorization: Bearer {{tokenResponese.response.body.token}}
   "password": "wp1",
   "gender": "male",
   "headline": "headline  --test",
-  "role": "5e4a4500e3748b43d0273ffb"
 }
 
 
@@ -35,33 +34,6 @@ content-type: application/json
 
 ### 删除用户
 DELETE http://127.0.0.1:7001/api/user/5e47618e4d36121293129c5f HTTP/1.1 
-Authorization: Bearer {{tokenResponese.response.body.token}}
-
-
-
-// 角色
-### 新建角色
-POST http://127.0.0.1:7001/api/role/create HTTP/1.1
-content-type: application/json
-Authorization: Bearer {{tokenResponese.response.body.token}}
-
-{
-  "name": "admin"
-}
-
-
-### 获取角色列表
-GET http://127.0.0.1:7001/api/role HTTP/1.1
-content-type: application/json
-
-
-### 获取角色信息
-GET http://127.0.0.1:7001/api/role/5e48c1253c0a7b0e9beb23d7 HTTP/1.1
-content-type: application/json
-
-
-### 删除角色
-DELETE http://127.0.0.1:7001/api/role/5e3fc83dda4cec33e2815a3f HTTP/1.1 
 Authorization: Bearer {{tokenResponese.response.body.token}}
 
 

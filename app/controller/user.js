@@ -9,7 +9,7 @@ class UserController extends Controller {
     const reqBody = ctx.request.body;
     if (reqBody && reqBody.name && reqBody.password) {
       // const userInfo = await ctx.model.User.findOne({ name: reqBody.name, password: reqBody.password });
-      const userInfo = await ctx.model.User.findOne({ name: reqBody.name, password: reqBody.password }).populate('role');
+      const userInfo = await ctx.model.User.findOne({ name: reqBody.name, password: reqBody.password });
       if (userInfo) {
         const userToken = userInfo.toJSON(); // 去掉 mongoose 中的方法，使 jwt 能注册进去
         const token = app.jwt.sign(userToken, this.config.jwt.secret, { expiresIn: '1d' }); // token签名 有效期为1小时
@@ -27,22 +27,21 @@ class UserController extends Controller {
   }
   async create() {
     const { ctx } = this;
-    const { name, role } = ctx.request.body;
+    const { name } = ctx.request.body;
     const repeatedUser = await ctx.model.User.findOne({ name });
     if (repeatedUser) ctx.throw(409, '用户已经存在');
-    if (!role) ctx.throw(404, '请填写角色');
     const user = await new ctx.model.User(ctx.request.body).save();
     ctx.body = user;
   }
   async getUserList() {
     const { ctx } = this;
-    const userList = await ctx.service.list.find({ model: 'User', populate: 'role' });
+    const userList = await ctx.service.list.find({ model: 'User' });
     ctx.body = userList;
   }
   async getUserInfo() {
     const { ctx } = this;
     const userId = ctx.params.id;
-    const userInfo = await ctx.model.User.findById(userId).populate('role');
+    const userInfo = await ctx.model.User.findById(userId);
     ctx.body = userInfo;
   }
   async delete() {

@@ -9,11 +9,6 @@ module.exports = app => {
   // app.passport.mount('github');
   // 首页
   router.get('/', controller.home.index);
-  // 角色
-  router.get('/api/role', controller.role.getRoleList);
-  router.get('/api/role/:id', controller.role.getRoleInfo);
-  router.post('/api/role/create', app.jwt, controller.role.create);
-  router.delete('/api/role/:id', app.jwt, controller.role.delete);
   // 用户
   router.get('/api/user', controller.user.getUserList);
   router.get('/api/user/:id', controller.user.getUserInfo);

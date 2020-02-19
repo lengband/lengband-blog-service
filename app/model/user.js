@@ -9,29 +9,33 @@ module.exports = app => {
       type: String,
       required: true,
     },
-    age: {
-      type: Number,
-    },
     password: {
       type: String,
       required: true,
       select: false,
     },
+    email: {
+      type: String,
+    },
+    article_num: {
+      type: Number,
+      default: 0,
+    },
+    comment_num: {
+      type: Number,
+      default: 0,
+    },
     avatar_url: { // 头像
       type: String,
     },
-    gender: { // 性别
-      type: String,
-      enum: [ 'male', 'female' ],
-      default: 'male',
-      required: true,
-    },
-    headline: { // 一句话介绍
-      type: String,
-    },
     role: {
-      type: Schema.Types.ObjectId,
-      ref: 'Role',
+      type: String,
+      enum: [ 'member', 'admin' ],
+      default: 'member',
+    },
+    last_login_time: {
+      type: Date,
+      default: Date.now,
     },
   }, {
     timestamps: true, // 将自动添加 createAt 和 updateAt 两个字段
