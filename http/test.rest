@@ -32,6 +32,11 @@ GET http://127.0.0.1:7001/api/user HTTP/1.1
 content-type: application/json
 
 
+### 获取用户详情
+GET http://127.0.0.1:7001/api/user/5e4d0e4ce04190dc75972b9b HTTP/1.1
+content-type: application/json
+
+
 ### 删除用户
 DELETE http://127.0.0.1:7001/api/user/5e47618e4d36121293129c5f HTTP/1.1 
 Authorization: Bearer {{tokenResponese.response.body.token}}

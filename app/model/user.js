@@ -28,7 +28,7 @@ module.exports = app => {
       type: Number,
       default: 0,
     },
-    avatar_url: { // 头像
+    avatar: { // 头像
       type: String,
     },
     role: {
@@ -36,9 +36,27 @@ module.exports = app => {
       enum: [ 'member', 'admin' ],
       default: 'member',
     },
+    gender: {
+      type: String,
+      enum: [ 'male', 'female' ],
+      default: 'male',
+    },
     last_login_time: {
       type: Date,
       default: Date.now,
+    },
+    notice: { // 是否开启邮件通知，既有评论的时候通知
+      type: Boolean,
+      default: false,
+    },
+    website: { // 保留字段，没想好用途
+      type: String,
+    },
+    github: {
+      type: String,
+    },
+    description: {
+      type: String,
     },
   }, {
     timestamps: true, // 将自动添加 createAt 和 updateAt 两个字段
