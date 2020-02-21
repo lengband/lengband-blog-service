@@ -24,7 +24,7 @@ module.exports = app => {
       type: Schema.Types.ObjectId,
       ref: 'Type',
     },
-    is_publish: { // 是否发布了文章
+    released: { // 是否发布了文章
       type: Boolean,
       default: false,
     },

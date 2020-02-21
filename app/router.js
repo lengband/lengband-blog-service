@@ -13,6 +13,7 @@ module.exports = app => {
   // 用户
   router.get('/api/user', controller.user.getUserList);
   router.get('/api/user/:id', controller.user.getUserInfo);
+  router.post('/api/user/register', controller.user.create);
   router.post('/api/user/create', app.jwt, controller.user.create);
   router.delete('/api/user/:id', app.jwt, controller.user.delete);
   router.post('/api/login', controller.user.login); // 登录校验

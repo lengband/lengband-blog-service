@@ -12,7 +12,8 @@ class UserController extends Controller {
       const userInfo = await ctx.model.User.findOne({ name: reqBody.name, password: reqBody.password });
       if (userInfo) {
         const userToken = userInfo.toJSON(); // 去掉 mongoose 中的方法，使 jwt 能注册进去
-        const token = app.jwt.sign(userToken, this.config.jwt.secret, { expiresIn: '1d' }); // token签名 有效期为1小时
+        const expiresIn = reqBody.remember ? '3d' : '1d';
+        const token = app.jwt.sign(userToken, this.config.jwt.secret, { expiresIn }); // token 签名有效期
         ctx.session.user = userInfo;
         ctx.session.userId = userInfo._id;
         ctx.body = {
