@@ -8,13 +8,17 @@ class UserController extends Controller {
     const { app } = ctx;
     const reqBody = ctx.request.body;
     if (reqBody && reqBody.name && reqBody.password) {
-      // const userInfo = await ctx.model.User.findOne({ name: reqBody.name, password: reqBody.password });
       const userInfo = await ctx.model.User.findOne({ name: reqBody.name, password: reqBody.password });
       if (userInfo) {
+        if (ctx.headers['x-auth-view'] === 'admin') { // 说明登录的是管理视图，需要验证角色是管理员
+          if (userInfo.role !== 'admin') {
+            ctx.throw(401, '权限不足，请使用管理员账号进行登录');
+          }
+        }
         const userToken = userInfo.toJSON(); // 去掉 mongoose 中的方法，使 jwt 能注册进去
         const expiresIn = reqBody.remember ? '3d' : '1d';
         const token = app.jwt.sign(userToken, this.config.jwt.secret, { expiresIn }); // token 签名有效期
-        ctx.session.user = userInfo;
+        ctx.session.userInfo = userInfo;
         ctx.session.userId = userInfo._id;
         ctx.body = {
           message: '获取token成功',

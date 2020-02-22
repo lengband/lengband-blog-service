@@ -33,8 +33,8 @@ module.exports = app => {
     },
     role: {
       type: String,
-      enum: [ 'member', 'admin' ],
-      default: 'member',
+      enum: [ 'user', 'admin' ],
+      default: 'user',
     },
     gender: {
       type: String,
