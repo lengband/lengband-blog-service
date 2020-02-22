@@ -96,7 +96,7 @@ Authorization: Bearer {{tokenResponese.response.body.token}}
 
 
 ### 获取文章详情
-GET http://127.0.0.1:7001/api/post/:id HTTP/1.1
+GET http://127.0.0.1:7001/api/post/5e50d488a734772206851c2d HTTP/1.1
 content-type: application/json
 
 

@@ -36,4 +36,9 @@ module.exports = app => {
   router.post('/api/tag/create', app.jwt, controller.tag.create);
   router.delete('/api/tag/:id', adminauth, app.jwt, controller.tag.delete);
   router.patch('/api/tag/:id', adminauth, app.jwt, controller.tag.update);
+  // 评论
+  router.get('/api/comment', controller.comment.getCommentList);
+  router.post('/api/comment/create', app.jwt, controller.comment.create);
+  router.delete('/api/comment/:id', adminauth, app.jwt, controller.comment.delete);
+  router.patch('/api/comment/:id', adminauth, app.jwt, controller.comment.update);
 };
