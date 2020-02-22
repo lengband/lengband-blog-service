@@ -18,6 +18,10 @@ class HomeController extends Controller {
     const name = path.basename(stream.filename);
     const time = Date.now();
     debug('name: %s', name);
+    const isExistUploadDir = fs.existsSync(path.join(baseDir, '/app/public/uploads'));
+    if (!isExistUploadDir) {
+      fs.mkdirSync(path.join(baseDir, '/app/public/uploads'));
+    }
     const filePath = path.join(baseDir, '/app/public/uploads', `/${time}-${name}`);
     try {
       await new Promise((resolve, reject) => {
