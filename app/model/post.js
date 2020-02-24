@@ -16,6 +16,17 @@ module.exports = app => {
       type: String,
       required: true,
     },
+    author: { // 作者
+      type: String,
+      default: 'lengband', // 如果作者不是 lengband 表明是转载不是原创
+    },
+    author_url: {
+      type: String,
+      default: '', // 如果作者不是 lengband 表明是转载不是原创
+    },
+    cover: { // 文章封面
+      type: String,
+    },
     view_count: { // 头像
       type: Number,
       default: 0,

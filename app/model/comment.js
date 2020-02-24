@@ -17,15 +17,15 @@ module.exports = app => {
       type: Schema.Types.ObjectId,
       ref: 'Post',
     },
-    toUser: { // 回复谁的评论
+    to_user: { // 回复谁的评论
       type: Schema.Types.ObjectId,
       ref: 'User',
     },
-    toContent: { // 回复的哪条评论
+    replys: [{ // 评论的回复
       type: Schema.Types.ObjectId,
       ref: 'Comment',
       default: '',
-    },
+    }],
     likes: { // 点赞数
       type: Number,
       default: 0,
