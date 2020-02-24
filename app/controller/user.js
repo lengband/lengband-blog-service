@@ -42,7 +42,7 @@ class UserController extends Controller {
   }
   async getUserList() {
     const { ctx } = this;
-    const userList = await ctx.service.list.find({ model: 'User' });
+    const userList = await ctx.service.common.list({ model: 'User' });
     ctx.body = userList;
   }
   async getUserInfo() {
@@ -61,6 +61,15 @@ class UserController extends Controller {
     const { ctx } = this;
     const user = await ctx.model.User.findByIdAndRemove(ctx.params.id);
     ctx.status = user ? 204 : 404;
+  }
+  async upload() {
+    const { ctx } = this;
+    const url = await ctx.service.common.upload('users');
+    await ctx.model.User.update({ _id: ctx.session.userId }, { $set: { avatar: url } });
+    this.ctx.body = {
+      success: true,
+      url,
+    };
   }
 }
 

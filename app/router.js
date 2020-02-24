@@ -11,7 +11,6 @@ module.exports = app => {
   // app.passport.mount('github');
   // 首页
   router.get('/', controller.home.index);
-  router.post('/api/upload', adminauth, app.jwt, controller.home.upload); // 上传文件
   // 用户
   router.get('/api/user', controller.user.getUserList);
   router.get('/api/user/:id', controller.user.getUserInfo);
@@ -20,6 +19,7 @@ module.exports = app => {
   router.delete('/api/user/:id', adminauth, app.jwt, controller.user.delete);
   router.post('/api/login', controller.user.login); // 登录校验
   router.patch('/api/user/:id', adminauth, app.jwt, controller.user.update);
+  router.post('/api/user/upload', adminauth, app.jwt, controller.user.upload); // 上传文件
   // 文章类别
   router.get('/api/type', controller.type.getTypeList);
   router.post('/api/type/create', app.jwt, controller.type.create);
@@ -31,6 +31,7 @@ module.exports = app => {
   router.post('/api/post/create', adminauth, app.jwt, controller.post.create);
   router.delete('/api/post/:id', adminauth, app.jwt, controller.post.delete);
   router.patch('/api/post/:id', adminauth, app.jwt, controller.post.update);
+  router.post('/api/post/:id/upload', adminauth, app.jwt, controller.post.upload); // 上传文件
   // 文章标签
   router.get('/api/tag', controller.tag.getTagList);
   router.post('/api/tag/create', app.jwt, controller.tag.create);

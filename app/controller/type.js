@@ -11,7 +11,7 @@ class TypeController extends Controller {
   }
   async getTypeList() {
     const { ctx } = this;
-    const typeList = await ctx.service.list.find({ model: 'Type' });
+    const typeList = await ctx.service.common.list({ model: 'Type' });
     ctx.body = typeList;
   }
   async create() {

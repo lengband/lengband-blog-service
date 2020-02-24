@@ -11,7 +11,7 @@ class CommentController extends Controller {
   }
   async getCommentList() {
     const { ctx } = this;
-    const typeList = await ctx.service.list.find({ model: 'Comment' });
+    const typeList = await ctx.service.common.list({ model: 'Comment' });
     ctx.body = typeList;
   }
   async create() {

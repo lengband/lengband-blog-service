@@ -20,7 +20,7 @@ class PostController extends Controller {
   }
   async getPostList() {
     const { ctx } = this;
-    const postList = await ctx.service.list.find({ model: 'Post', extParams: ctx.query, populate: 'type tags' });
+    const postList = await ctx.service.common.list({ model: 'Post', extParams: ctx.query, populate: 'type tags' });
     ctx.body = postList;
   }
   async getPostInfo() {
@@ -47,6 +47,15 @@ class PostController extends Controller {
     const postId = ctx.params.id;
     const post = await ctx.model.Post.update({ _id: postId }, { $set: ctx.request.body });
     ctx.body = post;
+  }
+  async upload() {
+    const { ctx } = this;
+    const url = await ctx.service.common.upload('posts');
+    await ctx.model.Post.update({ _id: ctx.params.id }, { $set: { cover: url } });
+    this.ctx.body = {
+      success: true,
+      url,
+    };
   }
 }
 

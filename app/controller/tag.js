@@ -11,7 +11,7 @@ class TagController extends Controller {
   }
   async getTagList() {
     const { ctx } = this;
-    const tagList = await ctx.service.list.find({ model: 'Tag' });
+    const tagList = await ctx.service.common.list({ model: 'Tag' });
     ctx.body = tagList;
   }
   async create() {
