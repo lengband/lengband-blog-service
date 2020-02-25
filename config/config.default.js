@@ -30,6 +30,25 @@ module.exports = appInfo => {
     domainWhiteList: [ '*' ],
   };
 
+  config.bodyParser = {
+    enable: true,
+    encoding: 'utf8',
+    formLimit: '10mb',
+    jsonLimit: '1mb',
+    textLimit: '1mb',
+    strict: true,
+    // @see https://github.com/hapijs/qs/blob/master/lib/parse.js#L8 for more options
+    queryString: {
+      arrayLimit: 100,
+      depth: 5,
+      parameterLimit: 1000,
+    },
+    onerror(err) {
+      err.message += ', check bodyParser config';
+      throw err;
+    },
+  };
+
   config.mongoose = {
     client: {
       url: 'mongodb://127.0.0.1/lengband_blog',
