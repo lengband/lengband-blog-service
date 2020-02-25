@@ -1,5 +1,7 @@
 'use strict';
 
+const path = require('path');
+const fs = require('fs');
 const Controller = require('egg').Controller;
 
 class UserController extends Controller {
@@ -60,6 +62,14 @@ class UserController extends Controller {
   async delete() {
     const { ctx } = this;
     const user = await ctx.model.User.findByIdAndRemove(ctx.params.id);
+    if (user.avatar) {
+      const uploadPath = user.avatar.split('/public/')[1];
+      const filePath = path.resolve(__dirname, `../public/${uploadPath}`);
+      const existFile = fs.existsSync(filePath);
+      if (existFile) {
+        fs.unlinkSync(filePath);
+      }
+    }
     ctx.status = user ? 204 : 404;
   }
   async upload() {

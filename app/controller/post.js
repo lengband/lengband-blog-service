@@ -1,4 +1,6 @@
 'use strict';
+const path = require('path');
+const fs = require('fs');
 
 const Controller = require('egg').Controller;
 
@@ -33,6 +35,14 @@ class PostController extends Controller {
     const { ctx } = this;
     try {
       const post = await ctx.model.Post.findByIdAndRemove(ctx.params.id);
+      if (post.cover) {
+        const uploadPath = post.cover.split('/public/')[1];
+        const filePath = path.resolve(__dirname, `../public/${uploadPath}`);
+        const existFile = fs.existsSync(filePath);
+        if (existFile) {
+          fs.unlinkSync(filePath);
+        }
+      }
       // type post_num -1（在 post_num 大于 0 时才执行）
       await ctx.model.Type.update({ _id: post.type, post_num: { $gt: 0 } }, { $inc: { post_num: -1 } });
       // tag post_num -1（在 post_num 大于 0 时才执行）
