@@ -55,7 +55,11 @@ class PostController extends Controller {
   async update() {
     const { ctx } = this;
     const postId = ctx.params.id;
-    const post = await ctx.model.Post.update({ _id: postId }, { $set: ctx.request.body });
+    const updateData = ctx.request.body;
+    if (updateData.released) {
+      updateData.released_time = Date.now();
+    }
+    const post = await ctx.model.Post.update({ _id: postId }, { $set: updateData });
     ctx.body = post;
   }
   async upload() {

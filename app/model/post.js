@@ -43,6 +43,10 @@ module.exports = app => {
       type: [{ type: Schema.Types.ObjectId, ref: 'Tag' }],
       required: true,
     },
+    released_time: {
+      type: Date,
+      default: Date.now,
+    },
   }, {
     timestamps: true, // 将自动添加 createAt 和 updateAt 两个字段
   });
