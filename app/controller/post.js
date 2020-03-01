@@ -28,7 +28,7 @@ class PostController extends Controller {
   async getPostInfo() {
     const { ctx } = this;
     const postId = ctx.params.id;
-    const postInfo = await ctx.model.Post.findById(postId).populate('type tag');
+    const postInfo = await ctx.model.Post.findById(postId).populate('type tags');
     ctx.body = postInfo;
   }
   async delete() {
